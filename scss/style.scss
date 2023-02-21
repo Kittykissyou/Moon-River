@@ -1,0 +1,20 @@
+@import 'default';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.header {
+  min-height: 52px;
+}
+.myDiv {
+  width: auto;
+  height: auto;
+  background-color: red;
+}
