@@ -12,25 +12,22 @@
 }
 
 .header {
-  min-height: 1080px;
-  /*
+  min-height: 1000px;
   background: linear-gradient(
     55.95deg,
     rgb(255, 63, 58, 0.2) 0%,
     rgb(247, 94, 5, 0.2) 100%
   );
-  */
-  background-color: black;
 }
-
-.header__container {
+/****ХЕДЕР****/
+.header-container {
   height: 52px;
   margin-top: 20px;
   display: flex;
   align-items: center;
   opacity: 1;
 
-  .header__logo {
+  .header-container__logo {
     width: 130px;
     height: 22px;
   }
@@ -42,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .header__event-container {
+  .header-container__event-container {
     width: 386px;
     height: 52px;
     margin-left: 225px;
@@ -53,7 +50,7 @@
       width: 206px;
       height: 52px;
     }
-    .header__login-register-container {
+    .header-container__login-register-container {
       width: 144px;
       height: 26px;
       margin-left: 36px;
@@ -66,11 +63,13 @@
     }
   }
 }
+/********/
 .menu {
   line-height: 160%;
 }
 .orange-button {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  padding: 0px 40px;
   border-radius: 4px;
   font-family: 'Lato';
   font-style: normal;
@@ -79,6 +78,18 @@
   line-height: 52px;
   color: white;
 }
+.orange-border-button {
+  background-color: rgb(255, 255, 255, 0);
+  border: #ff3f3a 1px solid;
+  border-radius: 4px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px;
+  color: rgba(255, 63, 58, 1);
+}
+/****ФИГУРЫ****/
 .header__arrow-down {
   position: absolute;
   left: 86.88%;
@@ -117,4 +128,57 @@
   height: 61px;
   top: 70%;
   left: 38%;
+}
+/********/
+/****Боди хедера****/
+.header__body-container {
+  height: 551px;
+  margin-top: 128px;
+  display: flex;
+
+  .header__body-left-side {
+    width: 691px;
+    display: flex;
+    flex-direction: column;
+    .header__play-showreel {
+      width: 172px;
+      height: 84px;
+      margin-top: 12px;
+    }
+    .header__body-left-side-txt {
+      margin-top: 24px;
+      margin-left: 15px;
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 130%;
+      letter-spacing: 1px;
+    }
+    .header__body-left-side-buttons {
+      width: 373px;
+      height: 52px;
+      margin-top: 60px;
+      margin-left: 15px;
+      display: flex;
+      justify-content: space-between;
+      .orange-border-button_body-container {
+        width: 148px;
+      }
+      .orange-button_body-container {
+        width: 201px;
+      }
+    }
+  }
+  .header__body-right-side img {
+    width: 602px;
+    height: 551px;
+    margin-left: 47px;
+  }
+}
+/********/
+/****футер хедера****/
+.header__footer-container {
+  height: 60px;
+  margin-top: 189px;
+  display: flex;
+  justify-content: space-between;
 }
