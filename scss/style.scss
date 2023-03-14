@@ -235,7 +235,9 @@
   width: 285px;
   height: 416px;
   text-align: center;
-  display: block;
+  display: inline-block;
+  position: absolute;
+  transition: transform 1s;
 
   .person-card__frame {
     height: 340px;
@@ -795,9 +797,19 @@
     .corousel-container_team {
       height: 416px;
       margin-top: 60px;
-      ul {
-        display: flex;
-        justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      .person-card_dianne-Russell {
+        left: 0;
+      }
+      .person-card_jerome-bell {
+        left: 285px+30px;
+      }
+      .person-card_kristin-watson {
+        left: (285px+30px) * 2;
+      }
+      .person-card_marvin-mvkinney {
+        left: (285px+30px) * 3;
       }
     }
   }

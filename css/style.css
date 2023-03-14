@@ -385,7 +385,12 @@ p {
   width: 285px;
   height: 416px;
   text-align: center;
-  display: block;
+  display: inline-block;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 .person-card .person-card__frame {
   height: 340px;
@@ -1050,12 +1055,18 @@ p {
 .body__sixth-container .body__sixth-cont-team .corousel-container_team {
   height: 416px;
   margin-top: 60px;
+  position: relative;
+  overflow: hidden;
 }
-.body__sixth-container .body__sixth-cont-team .corousel-container_team ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.body__sixth-container .body__sixth-cont-team .corousel-container_team .person-card_dianne-Russell {
+  left: 0;
+}
+.body__sixth-container .body__sixth-cont-team .corousel-container_team .person-card_jerome-bell {
+  left: 315px;
+}
+.body__sixth-container .body__sixth-cont-team .corousel-container_team .person-card_kristin-watson {
+  left: 630px;
+}
+.body__sixth-container .body__sixth-cont-team .corousel-container_team .person-card_marvin-mvkinney {
+  left: 945px;
 }
