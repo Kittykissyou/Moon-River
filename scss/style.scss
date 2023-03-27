@@ -207,30 +207,24 @@
     line-height: 130%;
   }
 }
-.corousel-buttons {
-  height: 46px;
-  width: 96px;
-  margin-top: 57.8px;
+.corousel-buttons__circle {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  .corousel-buttons__circle {
-    height: 48px;
-    width: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .corousel-buttons__arrow_right {
-      transform: scale(-1, 1);
-    }
-  }
-  .corousel-buttons__circle:hover {
-    background: #ff3f3a;
-    .corousel-buttons__arrow {
-      fill: white;
-    }
+  .corousel-buttons__arrow_right {
+    transform: scale(-1, 1);
   }
 }
+.corousel-buttons__circle:hover {
+  background: #ff3f3a;
+  .corousel-buttons__arrow {
+    fill: white;
+  }
+}
+
 .person-card {
   width: 285px;
   height: 416px;
@@ -787,12 +781,20 @@
   height: 1570px;
   margin-top: 120px;
   background: #f4f5f7;
+
   padding: 166px 0;
 
   .body__sixth-cont-team {
     .body__sixth-cont-team-header-carousel-btn {
       display: flex;
       justify-content: space-between;
+      .corousel-buttons {
+        height: 46px;
+        width: 96px;
+        margin-top: 57.8px;
+        display: flex;
+        align-items: center;
+      }
     }
     .corousel-container_team {
       height: 416px;
@@ -813,4 +815,116 @@
       }
     }
   }
+  .what-our-student-say_sixth-container {
+    margin-top: 180px;
+  }
+}
+.what-our-student-say {
+  height: 1242px;
+  .what-our-student-say__qoute-courusel {
+    margin-top: 60px;
+    height: 406px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ._left-btn-say-courusel {
+      position: absolute;
+      top: 148px;
+      left: 0;
+      z-index: 2;
+    }
+    ._right-btn-say-courusel {
+      position: absolute;
+      top: 148px;
+      left: 1182px;
+      z-index: 2;
+    }
+    .what-our-student-say__quote-viewport {
+      height: 344px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background: inherit;
+      .what-our-student-say__quote {
+        position: absolute;
+        left: 105px;
+        height: 344px;
+        width: 1020px;
+        display: flex;
+
+        align-items: center;
+
+        background: #ffffff;
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+          0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+          0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+          0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        transition: transform 1s;
+        .what-our-student-say__quote-braces {
+          position: absolute;
+          top: 64px;
+          left: 105px;
+        }
+        .what-our-student-say__quote-content {
+          display: flex;
+          flex-direction: column;
+          margin-left: 163px;
+        }
+        .what-our-student-say__quote-txt-container {
+          width: 752px;
+          height: 120px;
+          .what-our-student-say__quote-txt {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #424551;
+          }
+        }
+        .what-our-student-say__author {
+          width: 243px;
+          height: 72px;
+          margin-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .what-our-student-say__author-name {
+            width: 151px;
+            height: 50px;
+            .what-our-student-say__author-name-title {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 160%;
+              color: #1e212c;
+            }
+            .what-our-student-say__author-name-subtitle {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 150%;
+              color: #787a80;
+            }
+          }
+        }
+      }
+    }
+    .what-our-student-say__step-indicator {
+      width: 195px;
+      margin-top: 57px;
+      display: flex;
+      justify-content: space-between;
+      .what-our-student-say__step-indicator-dot {
+        width: 35px;
+        height: 0px;
+        border: 3px solid lightgray;
+        border-radius: 3px;
+      }
+      ._active {
+        border-color: #424551;
+      }
+    }
+  }
+}
+.body__seven-container {
+  height: 659px;
 }
