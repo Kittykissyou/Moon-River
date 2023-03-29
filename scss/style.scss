@@ -1104,6 +1104,7 @@
     .rows__column {
       display: flex;
       flex-direction: column;
+
       .nav-menu__header {
         font-weight: 700;
         font-size: 16px;
@@ -1111,6 +1112,41 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: #ffffff;
+      }
+      .nav-menu__inputarrow {
+        position: relative;
+      }
+      .nav-menu__input {
+        margin-top: 24px;
+        width: 286px;
+        height: 36px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+        padding: 9px 5px 9px 12px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        color: #ffffff;
+        opacity: 0.6;
+      }
+      .nav-menu__txt {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 150%;
+
+        display: flex;
+        align-items: center;
+
+        color: #ffffff;
+      }
+      .nav-menu__arrow {
+        position: absolute;
+        left: 260px;
+        top: 30px;
       }
 
       .menu_footer {
