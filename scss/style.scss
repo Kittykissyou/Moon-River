@@ -1100,11 +1100,51 @@
   align-items: center;
   .footer-about__rows {
     height: 198px;
+    display: flex;
     .rows__column {
       display: flex;
       flex-direction: column;
+      .nav-menu__header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      .menu_footer {
+        height: 162px;
+        margin-right: 79px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        gap: 8px;
+        a {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          color: rgb(255, 255, 255, 0.6);
+          .svg-phone {
+            margin-left: 3px;
+            margin-right: 11px;
+          }
+          .svg-mail {
+            margin-right: 9px;
+          }
+        }
+        a:hover {
+          color: white;
+          svg {
+            opacity: 1;
+          }
+        }
+      }
     }
     ._first-column {
+      margin-right: 80px;
       width: 279px;
       .rows__column-logo {
         width: 130px;
