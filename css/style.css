@@ -1521,6 +1521,7 @@ p {
 }
 .footer-about .footer-about__rows .rows__column .menu_footer {
   height: 162px;
+  width: 100%;
   margin-right: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
